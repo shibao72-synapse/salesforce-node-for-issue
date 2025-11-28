@@ -1,0 +1,18 @@
+{
+  "name": "salesforce-node-for-issue",
+  "version": "1.0.0",
+  "description": "issue script",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "salesforce"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@salesforce/core": "8.23.4",
+    "dotenv": "16.4.5"
+  }
+}
