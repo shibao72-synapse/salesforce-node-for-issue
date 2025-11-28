@@ -36,12 +36,12 @@ const buildAuthInfo = async () => {
 };
 
 async function getAccountsWithFields(connection) {
-    const accounts = await connection.sobject('Account').find({}, ['Id', 'Name']).limit(2000);
+    const accounts = await connection.sobject('Account').find({}, ['Id', 'Name']).limit(50000);
     return accounts;
 }
 
 async function getAccountsWithoutFields(connection) {
-    const accounts = await connection.sobject('Account').find({}).limit(2000);
+    const accounts = await connection.sobject('Account').find({}).limit(50000);
     return accounts;
 }
 (async () => {
